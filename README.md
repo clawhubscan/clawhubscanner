@@ -1,104 +1,132 @@
-🦞 CLAW Scanner
+# 🦞 CLAW Scanner
 
-AI-powered Token & GitHub Reality Verification
+### AI-Powered Token & GitHub Reality Verification  
+**Expose LARP. Verify Code. Trust Reality.**
 
-CLAW Scanner is an advanced analysis tool designed to expose fake projects, LARP development, and misleading token narratives by combining AI reasoning, market data, and deep GitHub repository inspection.
+---
 
-Not hype. Not vibes. Reality checks.
+![CLAW Scanner Banner](https://raw.githubusercontent.com/clawhubscan/.github/main/banner.png)
 
-🚀 What is CLAW Scanner?
+> **CLAW Scanner is built to answer one question:**  
+> **Is this project actually building anything — or just pretending?**
 
-CLAW Scanner helps investors, researchers, and builders distinguish between:
+---
 
-✅ Real projects
+## 🚨 Why CLAW Exists
 
-❌ LARP / fake builds
+The crypto space is full of:
+- Fake builders  
+- LARP GitHub repositories  
+- Empty codebases  
+- Copy-paste contracts  
+- Artificial commit activity  
 
-⚠️ Misleading or exaggerated narratives
+Most tools analyze **price and socials**.  
+**CLAW analyzes reality.**
 
-Unlike traditional scanners, CLAW puts GitHub analysis at the core, answering the most important question:
+---
 
-Is this project actually building anything?
+## 🔍 What CLAW Scanner Does
 
-🔍 Core Features
-🧠 AI Narrative Verification
+CLAW Scanner combines **AI reasoning**, **market intelligence**, and **deep GitHub inspection** to detect:
 
-Extracts the core claim of a token or project
+- ❌ Fake or empty GitHub repositories  
+- 🧱 Boilerplate or cloned code  
+- 💤 Dead or abandoned development  
+- 🧪 Artificial or suspicious commit patterns  
+- ☠️ **Malicious or obfuscated code**  
+- 🎭 Tokens using **real narratives with fake execution**
 
-Detects exaggeration, fake associations, and hype
+---
 
-Classifies narratives as CONFIRMED, PARTIAL, or UNVERIFIED
+## 🧬 GitHub Scanner (Core Feature)
 
-🧬 GitHub Scanner (Key Differentiator)
+This is the heart of CLAW.
 
-CLAW deeply inspects linked GitHub repositories to detect:
+CLAW does **real repository analysis**, not surface-level checks:
 
-❌ Fake or empty repositories
+- Repository structure & file relevance  
+- Commit history quality and frequency  
+- Contributor authenticity  
+- Code complexity vs claims  
+- Red flags for malicious intent  
 
-🧱 Boilerplate or copy-paste code
+> **No GitHub? Dead GitHub? Fake GitHub?**  
+> CLAW will call it out.
 
-💤 Dead or inactive development
+---
 
-🧪 Artificial commit activity
+## 🧠 AI Narrative Verification
 
-☠️ Malicious or obfuscated code patterns
+CLAW extracts and verifies what a project *claims*:
 
-This allows CLAW to clearly identify LARP projects pretending to build.
+- What is the core narrative?
+- Are real entities being referenced?
+- Is the association real, exaggerated, or fabricated?
 
-📊 Market & Risk Analysis
+Each scan is classified as:
 
-Real-time market data (price, liquidity, volume)
+- ✅ **CONFIRMED** — Real narrative + functional GitHub  
+- ⚠️ **PARTIAL** — Some truth, exaggerated execution  
+- ❌ **UNVERIFIED** — Fake, unverifiable, or LARP  
 
-Security signals and red flags
+Each verdict includes:
+- Confidence level (High / Medium / Low)  
+- Human-readable explanation  
+- Risk flags  
 
-Narrative vs reality comparison
+---
 
-🏷 Verdict System
+## 📊 Market & Risk Context
 
-Each scan returns a clear verdict:
+CLAW complements GitHub analysis with:
+- Market data (price, liquidity, volume)
+- Security signals
+- Narrative vs execution mismatch detection
 
-CONFIRMED
-Real narrative + functional, active GitHub
+> **Hype without code is a red flag.**
 
-PARTIAL
-Some real elements, but exaggerated claims or weak codebase
+---
 
-UNVERIFIED
-No functional GitHub, fake repos, or unverifiable claims
+## 🧱 Built With
 
-Each verdict includes a confidence level and human-readable reasoning.
+- React / Vite  
+- OpenAI (AI reasoning & classification)  
+- GitHub API (deep repo analysis)  
+- DexScreener API (market data)  
 
-🧩 Tech Stack
+---
 
-React / Vite
+## 🌐 Links
 
-OpenAI (AI reasoning & classification)
+- 🌍 Website: https://www.clawhubscan.xyz  
+- 🐦 Twitter / X: https://x.com/clawhubscan  
+- 💻 GitHub: https://github.com/clawhubscan  
 
-GitHub API (repository analysis)
+---
 
-DexScreener (market data)
+## ⚠️ Disclaimer
 
-🌐 Links
+CLAW Scanner is **not financial advice**.
 
-🌍 Website: https://www.clawhubscan.xyz
+- A **CONFIRMED** verdict does **not** mean a token is safe  
+- Real narratives can still be used for scams  
+- Always verify independently  
 
-🐦 Twitter / X: https://x.com/clawhubscan
+> **Trust code. Not promises. Always verify.**
 
-💻 GitHub: https://github.com/clawhubscan
+---
 
-⚠️ Disclaimer
+## 🤝 Contributing
 
-CLAW Scanner is not financial advice.
+If you care about:
+- Exposing fake builders  
+- Fighting LARP projects  
+- Bringing accountability to crypto  
 
-A CONFIRMED verdict does not mean a token is safe or legitimate
+Contributions, issues, and ideas are welcome.
 
-Real narratives can still be used for scams
+---
 
-Always combine this tool with your own research
-
-Trust code, not promises. Always verify.
-
-🤝 Contributing
-
-Contributions, issues, and feature requests are welcome.
-If you’re serious about fighting fake builders and LARP projects — you’re in the right place.
+### 🦞 CLAW Scanner  
+**If there’s no real code — it’s just a story.**

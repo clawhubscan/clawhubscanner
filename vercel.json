@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "/api/:path*" },
+    { "source": "/(.*)", "destination": "/" }
+  ],
+  "functions": {
+    "api/code-analyzer/chat.js": {
+      "maxDuration": 60
+    },
+    "api/code-analyzer/scan.js": {
+      "maxDuration": 60
+    }
+  }
+}

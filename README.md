@@ -1,145 +1,104 @@
-# DYOR Code Analyzer - RepoMind Style
+🦞 CLAW Scanner
 
-Frontend de análisis de repositorios GitHub con estilo RepoMind, convertido de Next.js a React + Vite.
+AI-powered Token & GitHub Reality Verification
 
-## 🚀 Instalación Rápida
+CLAW Scanner is an advanced analysis tool designed to expose fake projects, LARP development, and misleading token narratives by combining AI reasoning, market data, and deep GitHub repository inspection.
 
-```bash
-# 1. Instalar dependencias
-npm install
+Not hype. Not vibes. Reality checks.
 
-# 2. Configurar variables de entorno
-cp .env.example .env
-# Editar .env con tus keys:
-# GITHUB_TOKEN=ghp_xxx
-# OPENAI_API_KEY=sk-xxx
+🚀 What is CLAW Scanner?
 
-# 3. Iniciar desarrollo
-npm run dev
-```
+CLAW Scanner helps investors, researchers, and builders distinguish between:
 
-## ✅ NO requiere Tailwind
+✅ Real projects
 
-Este proyecto usa **CSS puro con scope** para no interferir con tus estilos existentes. Los estilos del Code Analyzer están aislados dentro de `.code-analyzer-scope`.
+❌ LARP / fake builds
 
-## 📁 Estructura del Proyecto
+⚠️ Misleading or exaggerated narratives
 
-```
-├── api/code-analyzer/          # Vercel Serverless Functions
-│   ├── fetch.js                # Fetch repo con Git Trees API
-│   ├── chat.js                 # Chat streaming con GPT-4o-mini
-│   ├── analyze.js              # Selección de archivos relevantes
-│   ├── scan.js                 # Security scanning
-│   ├── search.js               # Búsqueda text/regex/AST
-│   ├── quality.js              # Análisis de calidad
-│   ├── generate.js             # Generación de docs/tests
-│   └── fix-mermaid.js          # AI fix para diagramas
-│
-├── src/
-│   ├── components/code-analyzer/
-│   │   ├── ChatInterface.jsx   # Chat principal
-│   │   ├── CodeBlock.jsx       # Syntax highlighting
-│   │   ├── Mermaid.jsx         # Diagramas con export PNG
-│   │   ├── DevTools.jsx        # Search/Quality/Generate
-│   │   ├── RepoSidebar.jsx     # File tree con stats
-│   │   ├── RepoLayout.jsx      # Layout principal
-│   │   ├── FilePreview.jsx     # Preview de archivos
-│   │   └── ...más componentes
-│   │
-│   ├── lib/code-analyzer/      # Utilidades
-│   │   ├── tokens.js
-│   │   ├── storage.js
-│   │   ├── diagram-utils.js
-│   │   └── markdown-utils.js
-│   │
-│   ├── pages/
-│   │   ├── CodeAnalyzer.jsx    # Router wrapper (importa CSS)
-│   │   ├── CodeAnalyzerHome.jsx # Landing page
-│   │   └── CodeAnalyzerChat.jsx # Chat page
-│   │
-│   └── styles/
-│       └── code-analyzer-styles.css  # CSS aislado con scope
-│
-└── vercel.json
-```
+Unlike traditional scanners, CLAW puts GitHub analysis at the core, answering the most important question:
 
-## 🔧 Variables de Entorno
+Is this project actually building anything?
 
-Crear archivo `.env` en la raíz:
+🔍 Core Features
+🧠 AI Narrative Verification
 
-```env
-# GitHub Personal Access Token (para aumentar rate limit)
-GITHUB_TOKEN=ghp_xxxxxxxxxxxx
+Extracts the core claim of a token or project
 
-# OpenAI API Key
-OPENAI_API_KEY=sk-xxxxxxxxxxxx
-```
+Detects exaggeration, fake associations, and hype
 
-## 🎨 Features
+Classifies narratives as CONFIRMED, PARTIAL, or UNVERIFIED
 
-- ✅ Chat con streaming SSE
-- ✅ Diagramas Mermaid con export PNG
-- ✅ DevTools: Search, Quality Analysis, Generate
-- ✅ Security scanning
-- ✅ File preview modal
-- ✅ Sidebar con file tree y stats
-- ✅ Smart Links (auto-render GitHub cards)
-- ✅ Token counter con warnings
-- ✅ Persistencia de conversaciones
+🧬 GitHub Scanner (Key Differentiator)
 
-## 📝 Rutas
+CLAW deeply inspects linked GitHub repositories to detect:
 
-- `/code-analyzer` - Landing page
-- `/code-analyzer/:owner/:repo` - Chat de repositorio
+❌ Fake or empty repositories
 
-## 🚀 Deploy en Vercel
+🧱 Boilerplate or copy-paste code
 
-1. Conectar repo a Vercel
-2. Configurar variables de entorno en Vercel Dashboard
-3. Deploy automático
+💤 Dead or inactive development
 
-## 🔄 Integración con Proyecto Existente
+🧪 Artificial commit activity
 
-Para integrar en tu proyecto DYOR Scanner existente:
+☠️ Malicious or obfuscated code patterns
 
-1. Copia la carpeta `src/components/code-analyzer/`
-2. Copia la carpeta `src/lib/code-analyzer/`
-3. Copia la carpeta `api/code-analyzer/`
-4. Copia `src/styles/code-analyzer-styles.css`
-5. Copia las páginas de `src/pages/CodeAnalyzer*.jsx`
-6. En tu `App.jsx`, agrega las rutas:
-   ```jsx
-   import CodeAnalyzer from './pages/CodeAnalyzer';
-   
-   // En tus Routes:
-   <Route path="/code-analyzer" element={<CodeAnalyzer />} />
-   <Route path="/code-analyzer/:owner/:repo" element={<CodeAnalyzer />} />
-   ```
+This allows CLAW to clearly identify LARP projects pretending to build.
 
-## 📦 Dependencias Clave
+📊 Market & Risk Analysis
 
-```json
-{
-  "dependencies": {
-    "framer-motion": "^12.x",
-    "lucide-react": "^0.469.x",
-    "mermaid": "^11.x",
-    "html2canvas-pro": "^1.x",
-    "react-markdown": "^9.x",
-    "react-syntax-highlighter": "^15.x",
-    "remark-gfm": "^4.x"
-  }
-}
-```
+Real-time market data (price, liquidity, volume)
 
-## 💡 Cómo funciona el scope
+Security signals and red flags
 
-Los estilos del Code Analyzer están todos dentro de `.code-analyzer-scope`, lo que significa que NO afectarán a tu sitio existente.
+Narrative vs reality comparison
 
-Cada componente raíz tiene esta clase:
-- `CodeAnalyzerHome.jsx` → `<div className="code-analyzer-scope ...">`
-- `RepoLoader.jsx` → `<div className="code-analyzer-scope ...">`
-- `RepoLayout.jsx` → `<div className="code-analyzer-scope ...">`
-- Todos los modales → `<div className="code-analyzer-scope ...">`
+🏷 Verdict System
 
-El archivo `code-analyzer-styles.css` contiene todas las clases necesarias con el prefijo `.code-analyzer-scope`.
+Each scan returns a clear verdict:
+
+CONFIRMED
+Real narrative + functional, active GitHub
+
+PARTIAL
+Some real elements, but exaggerated claims or weak codebase
+
+UNVERIFIED
+No functional GitHub, fake repos, or unverifiable claims
+
+Each verdict includes a confidence level and human-readable reasoning.
+
+🧩 Tech Stack
+
+React / Vite
+
+OpenAI (AI reasoning & classification)
+
+GitHub API (repository analysis)
+
+DexScreener (market data)
+
+🌐 Links
+
+🌍 Website: https://www.clawhubscan.xyz
+
+🐦 Twitter / X: https://x.com/clawhubscan
+
+💻 GitHub: https://github.com/clawhubscan
+
+⚠️ Disclaimer
+
+CLAW Scanner is not financial advice.
+
+A CONFIRMED verdict does not mean a token is safe or legitimate
+
+Real narratives can still be used for scams
+
+Always combine this tool with your own research
+
+Trust code, not promises. Always verify.
+
+🤝 Contributing
+
+Contributions, issues, and feature requests are welcome.
+If you’re serious about fighting fake builders and LARP projects — you’re in the right place.

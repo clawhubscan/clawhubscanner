@@ -2,7 +2,7 @@
 
 ### AI-Powered Token & GitHub Reality Verification  
 **Expose LARP. Verify Code. Trust Reality.**
-
+<a href="https://freeimage.host/"><img src="https://iili.io/qf6EsdN.jpg" alt="qf6EsdN.jpg" border="0" /></a>
 ---
 
 ![CLAW Scanner Banner](https://raw.githubusercontent.com/clawhubscan/.github/main/banner.png)
